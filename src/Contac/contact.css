@@ -1,0 +1,97 @@
+.containerPrinci-6 {
+    background-color: #eaf2fd;
+    width: 100%;
+    height: auto;
+  }
+  
+  .ContentContainer {
+    width: 100%;
+    display: flex;
+  }
+  .ImgContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .ImgContainer img {
+    width: 90%;
+    height: auto;
+    padding: 50px 0;
+  }
+  .formContainer {
+    width: 100%;
+    padding: 50px 0;
+  }
+  .formContainer h1,
+  .formContainer p {
+    line-height: 1;
+    text-align: left;
+  }
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #outlined-basic{
+    background-color: white;
+  }
+  
+  /*    css sobre el formulario       */
+  
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  
+  .btnEnviar{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+    width: 30%;
+    border-radius: 20px;
+  }
+  
+
+  @media (max-width: 1200px) and (min-width:700px){
+    .ContentContainer{
+      display: flex;
+      flex-direction: column;
+    }
+    .formContainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    .btnEnviar{
+      width: 20%;
+      border-radius: 20px;
+      position: relative;
+      left: 39%;
+    }
+}
+  @media (max-width: 700px){
+    .ImgContainer{
+      display: none;
+    }
+    .formContainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .formContainer p{
+    text-align: justify;
+    padding: 0 50px;
+    }
+    .btnEnviar{
+      position: relative;
+      left: 25%;
+      width: 50%;
+      border-radius: 20px;
+    }
+    #outlined-basic{
+      width: 100%;
+    }
+  }

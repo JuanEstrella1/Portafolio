@@ -1,0 +1,16 @@
+.frame{
+    width: 40px;
+    height: auto;
+    margin: 0 20px;
+    color: #2ba8fb;
+    position: relative;
+    top: -20%;
+    
+}
+.frameTittle{
+    position: relative;
+    left:20px
+}
+.frameBox{
+    margin: 0px;
+}

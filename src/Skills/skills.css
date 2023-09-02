@@ -1,0 +1,64 @@
+.containerPinci-3 {
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+  }
+  .containerSub{
+    padding: 0 120px;
+  }
+  .containerSub h1 {
+    text-align: center;
+    margin: 40px 0px;
+  }
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+  }
+  
+  .oneBox {
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    
+    margin: 10px 0;
+  }
+  .oneBox img{
+    position: relative;
+    top: 60%;
+    filter: hue-rotate(180deg);
+  }
+  .oneBox h5{
+    position: relative;
+    top: 55%;
+    display: flex;
+    padding-left: 20px;
+    font-size: 15px;
+  }
+
+/* implementacion de la parte responsive de la pagina */
+
+@media (max-width:700px){
+  .oneBox {
+    margin: 10px;
+    width: 70%;
+  }
+  
+  .boxes{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+  .containerSub{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .oneBox h5{
+    padding-left: 20px;
+  }
+}

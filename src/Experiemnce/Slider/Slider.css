@@ -1,0 +1,76 @@
+
+.imagen{
+    width: 90%;
+    margin-right: 30px;
+    
+}
+.contador{
+    width: 10%;
+    height: 15%;
+    position: relative;
+    left: 83%;
+    top: 70px;
+    background-color: white;
+    border-radius: 100px;
+    opacity: 0.5;
+}
+.contador h3{
+    opacity: 0.8;
+}
+
+.arrowRigth{
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    color:gray;
+    opacity: 0.9;
+}
+
+
+.arrowLeft{
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    color:gray;
+    opacity: 0.9;
+}
+.arrowRigth:hover, .arrowLeft:hover {
+    color: blue;
+    transition-duration: 1s;
+}
+
+.imagen[id]:target{
+opacity: 1;
+}
+
+
+
+
+@media (max-width:760px){
+    .imagen{
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+}
+
+
+
+/*  Transiciones  */
+
+.fade-enter{
+    opacity: 0;
+ }
+ .fade-exit{
+    opacity: 1;
+ }
+ .fade-enter-active{
+    opacity: 1;
+ }
+ .fade-exit-active{
+    opacity: 0;
+ }
+ .fade-enter-active,
+ .fade-exit-active{
+    transition: opacity 500ms;
+ }

@@ -1,0 +1,30 @@
+.containerPrinci-2{
+    background-color: #EAF2FD;
+    width: 100%;
+    height: auto;
+    
+}
+.containerText-2{
+    text-align: justify;
+    padding-left: 14.8%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.paragraph{
+    width: 50%;
+    font-size: 20px;
+}
+h1{
+    font-size: 2rem;
+}
+@media (max-width:760px){
+    
+    .tituloAboutMe{
+        text-align: center;
+        padding-right: 50px;
+    }
+    .paragraph{
+        width: 80%;
+        padding-left: 0px;
+    }
+}
