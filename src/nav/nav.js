@@ -2,7 +2,6 @@ import React from "react";
 import "./nav.css";
 import imagen from "../nav/brillo.svg"
 import foto from "../descripcion/imgPerfil.jpeg"
-//import { Link } from 'react-scroll';
 
 function Nav() {
   return (
@@ -22,7 +21,7 @@ function Nav() {
           <li className="enlaces"><a href="#Skills">Hobbies</a></li>
           <li className="enlaces"><a href="#formacion">Formacion</a></li>
           <li className="enlaces"><a href="#Proyectos">Proyectos</a></li>
-          <li className="enlaces"><a href="https://mail.google.com/mail/u/0/#inbox"
+          <li className="enlaces"><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=jestrella9294@gmail.com"
           target= "_blank" rel="noreferrer">jestrella9294@gmail.com</a></li>
         </ul>
       </div>
