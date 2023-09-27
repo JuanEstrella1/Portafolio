@@ -17,10 +17,6 @@ function Contact() {
   const [formulario,setFormulario] = useState({nombre, telefono, correo, mensaje});
   useEffect(() => console.log(formulario),[formulario])
 
-
-
-
-
   return (
     
     <section className="containerPrinci-6">

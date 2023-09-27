@@ -1,5 +1,6 @@
 import React from "react";
 import "./description.css";
+import {BiLogoGithub, BiLogoLinkedinSquare, BiLogoFacebookSquare, BiLogoGmail} from "react-icons/bi"
 
 function Description() {
   return (
@@ -13,26 +14,21 @@ function Description() {
           Universidad Industrial de Santander, Universidade de Medellín y
           actualmente estoy participando del proyecto Oracle ONE en Alura Latam
         </h4>
-        <div className="containerEnlaces2">
-          <a href="https://github.com/JuanEstrella1" className="enlaces2">
-            Github ↗
-          </a>
-          <a
-            href="https://www.linkedin.com/in/juan-esteban-estrella-soto/"
-            className="enlaces2"
-          >
-            Linkedin ↗
-          </a>
-          <a
-            href="https://www.instagram.com/juan_estrellaa/"
-            className="enlaces2"
-          >
-            Instagram ↗
-          </a>
-          <a href="/" className="enlaces2">
-            Portafolio ↗
-          </a>
-        </div>
+        
+      <div className="containerLogoDescripcion">
+       <a href="https://github.com/JuanEstrella1" target= "_blank" rel="noreferrer">
+         <BiLogoGithub className="logoRedesDescripcion"  />
+       </a>
+       <a href="https://www.linkedin.com/in/juan-esteban-estrella-soto/" target= "_blank" rel="noreferrer">
+         <BiLogoLinkedinSquare className="logoRedesDescripcion"  />
+       </a>
+       <a href="https://www.facebook.com/juanesteban.estrellaa" target= "_blank" rel="noreferrer">
+         <BiLogoFacebookSquare className="logoRedesDescripcion"  />
+       </a>
+       <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=jestrella9294@gmail.com" target= "_blank" rel="noreferrer">
+         <BiLogoGmail className="logoRedesDescripcion"  />
+       </a>
+      </div>
       </div>
       <div className="containerImg"></div>
     </section>

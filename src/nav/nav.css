@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 }
-nav {
+.containerNav {
   width: 100%;
 }
 .container {
@@ -27,9 +27,10 @@ img {
 }
 ul {
   display: flex;
-  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
 }
-nav a {
+.containerNav a {
   display: flex;
   margin: 20px;
   text-decoration: none;
@@ -39,7 +40,7 @@ nav a {
 .enlaces {
   list-style-type: none;
 }
-nav a:hover {
+.containerNav a:hover {
   color: red; /* Color al pasar el cursor sobre el enlace */
   transform: translateX(10px);
   cursor: pointer;
@@ -57,7 +58,22 @@ nav a:hover {
 
 /* aparación de de información de manera responsive */
 
-
+/* /////////Tabletas///////// */
+@media (min-width: 760px) and (max-width: 1200px) {
+.container{
+  flex-direction: column;
+}
+.nombre{
+  padding: 10px 0;
+}
+.links{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+  
+}
+/* /////////Celulares///////// */
 
 @media screen and  (max-width:760px) {
   .links {

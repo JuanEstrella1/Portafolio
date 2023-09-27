@@ -46,11 +46,16 @@
   }
   
   .btnEnviar{
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 10px;
-    width: 30%;
-    border-radius: 20px;
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    color: white;
+    background-color: #2a7ae4;
+  }
+  .btnEnviar:hover{
+    padding: 10px;
+    background-color: #2407dc;
   }
   
 
@@ -66,10 +71,7 @@
       
     }
     .btnEnviar{
-      width: 20%;
-      border-radius: 20px;
-      position: relative;
-      left: 39%;
+      width: 100%;
     }
 }
   @media (max-width: 700px){
@@ -85,11 +87,12 @@
     text-align: justify;
     padding: 0 50px;
     }
+    .formulario{
+      align-items: center;
+    }
     .btnEnviar{
-      position: relative;
-      left: 25%;
-      width: 50%;
-      border-radius: 20px;
+      width: 100%;
+      
     }
     #outlined-basic{
       width: 100%;

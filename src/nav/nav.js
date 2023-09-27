@@ -5,7 +5,7 @@ import foto from "../descripcion/imgPerfil.jpeg"
 
 function Nav() {
   return (
-    <nav>
+    <nav className="containerNav">
     <div className="container">
       <div className="nombre">
         <img src={imagen} alt="" className="logo"/>

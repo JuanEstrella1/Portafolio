@@ -17,8 +17,22 @@
 h1{
     font-size: 2rem;
 }
-@media (max-width:760px){
-    
+/* /////////Tabletas///////// */
+@media (min-width: 700px) and (max-width: 1200px) {
+    .containerText-2{
+        text-align: justify;
+        padding: 20px 100px;
+    }
+    .tituloAboutMe{
+        text-align: center;
+    }
+    .paragraph{
+        width: 100%;
+        padding-left: 0px;
+    }
+  }
+  /* /////////Celulares///////// */
+  @media (max-width: 700px) {
     .tituloAboutMe{
         text-align: center;
         padding-right: 50px;
@@ -27,4 +41,4 @@ h1{
         width: 80%;
         padding-left: 0px;
     }
-}
+  }

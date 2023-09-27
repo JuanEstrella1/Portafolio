@@ -10,15 +10,15 @@ function ImgIzq({biblioteca}) {
     <div className="containerBoxImg">
       
       
-      <Slider url={biblioteca.url} />
+    <Slider url={biblioteca.url} />
     </div>
     <div className="containerContent">
-      <h3>{titulo}</h3>
+      <h3 className="tituloImgIzq">{titulo}</h3>
       <p className="subtextoIzq">{subtexto}</p>
-      <Frameworks frames={biblioteca.frameworks}/>
+      <Frameworks frames={biblioteca.frameworks} className="frames"/>
       <div className="containerButtons">
-        <a href={github} target= "_blank" rel="noreferrer"><button id="btn1">Repositorio</button></a>
-        <a href={enlace} target= "_blank" rel="noreferrer"><button>Ver Demo</button></a> 
+        <a href={github} target= "_blank" rel="noreferrer"><button className="btnImgIzq" id="btnRepositorioImgIzq">Repositorio</button></a>
+        <a href={enlace} target= "_blank" rel="noreferrer"><button className="btnImgIzq" id="btnDemoImgIzq">Ver Demo</button></a> 
       </div>
     </div>
   </div>

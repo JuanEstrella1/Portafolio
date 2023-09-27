@@ -29,20 +29,14 @@
     flex-direction: row;
   }
   
-  section a {
+  /* section a {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
     margin-top: 0;
     margin-left: 10px;
     text-decoration: none;
     font-size: 20px;
-
-  }
-  section a:hover {
-    color: red; /* Color al pasar el cursor sobre el enlace */
-    transform: translateX(10px);
-}
+  } */
   
   
   /*.containerImg {
@@ -56,7 +50,7 @@
   .containerImg {
     display: block;
     width: 400px;
-    height: 350px;
+    height: 400px;
     margin-bottom: 20px;
     border-radius: 50%;
     background-image: url(imgPerfil.jpeg);
@@ -66,39 +60,53 @@
     position: 50px 50px;
   }
 
-@media (min-width:760px) and (max-width:1000px){
-  .containerText{
-    padding: 50px ;
+  .containerLogoDescripcion {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
   }
-  .containerImg{
-    position: relative;
-    top: 10px;
-    width: 50%;
+  
+  .logoRedesDescripcion {
+    color: #2a7ae4;
+    width: 100%;
+    height: 100%;
+    margin: 10px 10px 0  0px;
+  }
+  .logoRedesDescripcion:hover{
+    color: #2407dc;
+  }
+
+  /* /////////Tabletas///////// */
+@media (min-width: 700px) and (max-width: 1200px) {
+
+  .containerPrincipal{
+    width: 100%;
+    padding-left: 0px;
+  }
+  .containerText{
+    padding-inline-start: 0px;
+    padding: 0 20px;
+  }
+  .containerImg {
+    width: 350px;
+    height: 350px;
   }
 }
-
-
-
-  @media (max-width:760px) {
-    .containerImg {
-      display: none;
-    }
-    .containerPrincipal{
-      width: 100%;
-
-    }
-    .textTitulo{
-      padding: 10px;
-      text-align: left;
-    }
-    .containerText{
-      text-align: center;
-      width: 100%;
-      margin: 10px;
-      padding: 20px;
-    }
-    .containerEnlaces2{
-      padding-right: 40px;
-    }
-
+/* /////////Celulares///////// */
+@media (max-width: 700px) {
+  .containerPrincipal{
+    width: 100%;
   }
+  .containerImg {
+    display: none;
+  }
+  .containerText{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-inline-start: 0px;
+      padding-left: 20px;
+/*       background-color: aquamarine;
+ */  }
+}
