@@ -7,7 +7,7 @@ function Footer() {
       <div className="referencias">
       <h5 className="tituloFooter"> Desarrollado por Juan Esteban Estrella</h5>
       <h5 className="tituloFooter">2023</h5>
-      <div className="containerLogo">
+      {/* <div className="containerLogo">
        <a href="https://github.com/JuanEstrella1" target= "_blank" rel="noreferrer">
          <BiLogoGithub className="logoRedes"  />
        </a>
@@ -20,7 +20,7 @@ function Footer() {
        <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=jestrella9294@gmail.com" target= "_blank" rel="noreferrer">
          <BiLogoGmail className="logoRedes"  />
        </a>
-      </div>
+      </div> */}
       </div>
 
     </footer>

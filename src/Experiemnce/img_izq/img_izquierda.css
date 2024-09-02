@@ -28,8 +28,13 @@
     justify-content: center;
     padding-left: 40px;
   }
-  
-  .tituloImgIzq,.subtextoIzq{
+  .subtextoIzq{
+    width: 80%;
+    text-align: justify;
+    margin: 0 30px;
+    opacity: .8;
+  }
+  .tituloImgIzq{
     color: black;
     margin: 0;
     line-height: 1.5;
@@ -37,17 +42,11 @@
     margin-left: 30px;
     font-size: 30px;
   }
-  .subtextoIzq{
-    width: 70%;
-    text-align: justify;
-    font-size: 15px;
-    
-  }
   
   .containerButtons {
     display: flex;
     flex-direction: row;
-    margin-left: 20px;
+    margin-left: 25px;
   }
  
   .btnImgIzq {
@@ -93,6 +92,10 @@
     height: 50px;
     font-size:15px;
   }
+  .subtextoIzq{
+    font-size: 15px;
+    margin: 10px 30px;
+  }
 }
 /* /////////Celulares///////// */
 @media (max-width: 760px) {
@@ -107,10 +110,13 @@
     padding-left: 0px;
   }
   
-  .tituloImgIzq,.subtextoIzq{
+  .tituloImgIzq{
     color: black;
     line-height: 0.6;
     margin-left: 20px;
+  }
+  .subtextoIzq{
+    margin: 15px 25px;
   }
   .containerButtons{
   display: flex;

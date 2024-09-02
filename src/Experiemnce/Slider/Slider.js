@@ -6,15 +6,14 @@ import {
 } from "react-icons/bs";
 import "./Slider.css";
 import { SwitchTransition, CSSTransition } from "react-transition-group";
-import 'animate.css';
+import "animate.css";
 
 function Slider(props) {
   const { url } = props;
 
-
   const [cont, setCont] = useState(0);
 
- /*  const izquierda = ()=>{
+  /*  const izquierda = ()=>{
     const imagen = document.querySelector(".imagen")
     console.log(imagen);
     imagen.classList.remove("animate__fadeInRight"); 
@@ -32,9 +31,8 @@ function Slider(props) {
           imagen.classList.add("animate__fadeInRight"); 
           
           */
-          
-          
-          /*  imagen.classList.contains("animate__fadeInRight") 
+
+  /*  imagen.classList.contains("animate__fadeInRight") 
           && imagen.classList.remove('animate__fadeInRight');
             imagen.classList.add('animate__fadeInRight')
           console.log("hola perros",imagen)
@@ -47,32 +45,35 @@ function Slider(props) {
           
           console.log("derecha")
   }  */
-  
- 
 
   return (
     <div className="box">
       <h3 className="contador">
         {cont + 1}/{url.length}
       </h3>
-      
-      <SwitchTransition>
-        <CSSTransition key={cont} classNames='fade'
-          addEndListener={(node, done) => node.addEventListener("transitionend", done, false)}>
-            <img src={url[cont]} alt="" className="imagen" id={cont} />
-        </CSSTransition>
-      </SwitchTransition> 
 
-     {/*  <img src={url[cont]} alt="" className="imagen animate__animated" id={cont} />
- */}
+      <SwitchTransition>
+        <CSSTransition
+          key={cont}
+          classNames="fade"
+          addEndListener={(node, done) =>
+            node.addEventListener("transitionend", done, false)
+          }
+        >
+          <img src={url[cont]} alt="" className="imagen" id={cont} />
+        </CSSTransition>
+      </SwitchTransition>
+
+      {/*  <img src={url[cont]} alt="" className="imagen animate__animated" id={cont} />
+       */}
       <BsFillArrowLeftSquareFill
         className="arrowLeft"
         onClick={() => {
           setCont((val) => (cont > 0 ? val - 1 : cont));
-           /* izquierda() */
-           }}
+          /* izquierda() */
+        }}
       />
-      
+
       <BsFillArrowRightSquareFill
         className="arrowRigth"
         onClick={() => {
@@ -82,10 +83,10 @@ function Slider(props) {
             const imagen = document.querySelector(".imagen");
             imagen.classList.toggle('animate__fadeInRight');
           })() */
-
         }}
       />
     </div>
+    
   );
 }
 

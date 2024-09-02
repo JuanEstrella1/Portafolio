@@ -1,9 +1,9 @@
 import React from "react";
-import Slider from "../Slider/Slider"
-import Frameworks from "../Frameworks/frameworks";
+import Slider from "../Slider/Slider"/* 
+import Frameworks from "../Frameworks/frameworks"; */
 
 function ImgIzq({biblioteca}) {
- const {enlace, github,subtexto,titulo} = biblioteca;
+ const {enlace, github,descripcion,titulo} = biblioteca;
     return (
     <section className="containerPrinci-5">
     <div className="containerIzq">
@@ -14,8 +14,8 @@ function ImgIzq({biblioteca}) {
     </div>
     <div className="containerContent">
       <h3 className="tituloImgIzq">{titulo}</h3>
-      <p className="subtextoIzq">{subtexto}</p>
-      <Frameworks frames={biblioteca.frameworks} className="frames"/>
+      <p className="subtextoIzq">{descripcion}</p>
+     {/*  <Frameworks frames={biblioteca.frameworks} className="frames"/> */}
       <div className="containerButtons">
         <a href={github} target= "_blank" rel="noreferrer"><button className="btnImgIzq" id="btnRepositorioImgIzq">Repositorio</button></a>
         <a href={enlace} target= "_blank" rel="noreferrer"><button className="btnImgIzq" id="btnDemoImgIzq">Ver Demo</button></a> 

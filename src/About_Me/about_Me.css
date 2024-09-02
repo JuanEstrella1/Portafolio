@@ -1,5 +1,5 @@
 .containerPrinci-2{
-    background-color: #EAF2FD;
+    background-color: #00000097;
     width: 100%;
     height: auto;
     
@@ -11,6 +11,8 @@
     padding-bottom: 20px;
 }
 .paragraph{
+    color: white;
+    opacity: .8;
     width: 50%;
     font-size: 20px;
 }

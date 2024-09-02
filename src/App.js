@@ -13,9 +13,10 @@ import Academic from "./School/academic";
 import Experience from "./Experiemnce/Experience";
 import Contact from "./Contac/contact";
 import Footer from "./Footer/footer";
+/* import {archivo} from "./Apis/apis" */
 
 function App() {
-  
+  /* archivo() */
 
   return (
     <div className="App">

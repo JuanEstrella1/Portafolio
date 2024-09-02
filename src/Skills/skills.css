@@ -13,23 +13,36 @@
   .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   
   }
-  
+  .titulo{
+    color: black;
+  }
   .oneBox {
     background-color: white;
     height: 200px;
     width: 200px;
     display: flex;
     flex-direction: column;
-    
-    margin: 10px 0;
+    background-color: white;
+    margin: 10px;
+    padding-left: 5px;
+    justify-content: flex-end;
   }
-  .oneBox img{
-    position: relative;
+  .logo{
+    width: 30%;
+    height: auto;
+    margin-left: 15px;
+    
+  }
+  .tituloBox{
+    text-align: left;
+    font-size: 15px;
+    margin-left: 20px;
+  }
+  /* .oneBox img{
     top: 60%;
-    filter: hue-rotate(180deg);
   }
   .oneBox h5{
     position: relative;
@@ -37,11 +50,11 @@
     display: flex;
     padding-left: 20px;
     font-size: 15px;
-  }
+  } */
 
 /* implementacion de la parte responsive de la pagina */
 
-@media (max-width:700px){
+@media (max-width:758px){
   .oneBox {
     margin: 10px;
     width: 70%;
@@ -60,5 +73,10 @@
   }
   .oneBox h5{
     padding-left: 20px;
+  }
+  .logo{
+    display: block;
+    width: 25%;
+    margin-left: 35px;
   }
 }

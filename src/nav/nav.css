@@ -30,7 +30,21 @@ ul {
   flex-wrap:wrap;
   justify-content: center;
 }
-.containerNav a {
+.btnDescargarCv{
+  width: 150px;
+  padding: 10px;
+  font-size: 15px;
+  border: 0;
+  background-color: #00000097;
+  color: white;
+}
+.btnDescargarCv:hover{
+  cursor: pointer;
+  background-color: #2407dc;
+  transition: ease-in-out .5s;
+  color: white;
+}
+.enlacesPagina {
   display: flex;
   margin: 20px;
   text-decoration: none;
@@ -40,19 +54,28 @@ ul {
 .enlaces {
   list-style-type: none;
 }
-.containerNav a:hover {
-  color: red; /* Color al pasar el cursor sobre el enlace */
-  transform: translateX(10px);
+.enlacesPagina:hover {
+  color: red;
   cursor: pointer;
   text-decoration: overline;
+}
+.linkDescargar{
+  margin: 20px;
+  text-decoration: none;
+}
+.linkDescargar:hover{
+  text-decoration: none;
 }
 .links {
   display: block;
 }
-.logo {
+.logoNav {
   display: block;
 }
 .imgResponsive{
+  display: none;
+}
+.btnDescargarCelular{
   display: none;
 }
 
@@ -70,6 +93,7 @@ ul {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
   
 }
@@ -79,15 +103,23 @@ ul {
   .links {
     display: none;
   }
-  .logo {
+  .logoNav {
     display: none;
   }
   .containerImgResponsive {
     display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
   }
   .nombre {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
   }
   .name {
     display: flex;
@@ -97,25 +129,21 @@ ul {
     padding-right: 50px;
     font-size: 30px;
   }
-  .containerImgResponsive {
-    background-image: url(../descripcion/description.js);
-    width: 100%;
-    height: auto;
-    margin: 20px 0;
-    border-radius: 50px;
-    /*background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: 50px 50px;*/
-  }
+
   .imgResponsive{
-    width: 50%;
-    height: auto;
+    width: 70%;
+    height: 70%;
     display: block;
-    border-radius: 500px;
-    background-size: cover;
-    position: relative;
-    left: 24%;
+    border-radius: 50%;
+  }
+  .btnDescargarCelular{
+    display: block;
+    border: 0;
+    height: 80px;
+    width: 150px;
+    padding: 20px;
+    background-color: #00000097 ;
+    color: white;
   }
 }
 
