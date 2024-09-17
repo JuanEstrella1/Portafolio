@@ -27,7 +27,7 @@ function Experience() {
   return (
     <div className="Experience" id="Proyectos">
       <h1 className="titulo">Proyectos</h1>
-       { proyectos.map((item, index) =>(
+       { proyectos.slice(0,5).map((item, index) =>(
         <div key={index}>
         {index % 2 === 0 || index === 0 ? (
           <ImgIzq biblioteca={item}/>
